@@ -27,11 +27,6 @@ class Task {
     public LocalDate getDueDate() {
         return dueDate;
     }
-
-    public boolean isCompleted() {
-        return completed;
-    }
-
     public void markAsCompleted() {
         this.completed = true;
     }
@@ -113,7 +108,7 @@ public class Main {
                     System.out.print("Enter the task ID to mark it as completed: ");
                     int taskIdToComplete = Integer.parseInt(scanner.nextLine());
                     taskManager.markTaskAsCompleted(taskIdToComplete);
-                    System.out.println("Task marked as completed.");
+                    System.out.println("Task marked as done.");
                     break;
                 case "3":
                     System.out.print("Enter the task ID to delete it: ");
